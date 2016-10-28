@@ -88,11 +88,11 @@ if __name__ == '__main__':
    maxIters = 10000
    batchSize = 100
    valBatchSize = 500
-   epoch = 100
+   epoch = 1000
    nil = [D, 1000, 1000, C]
 
    initParams(nil)
-   opt = optimizer(eta=0.5)
+   opt = optimizer(eta=0.1)
    sess = tfInit()
    train(trainDat, valDat)
    acc = test(testX, testY)
